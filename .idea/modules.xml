@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/anotherArtifact/anotherArtifact.iml" filepath="$PROJECT_DIR$/anotherArtifact/anotherArtifact.iml" />
       <module fileurl="file://$PROJECT_DIR$/anotherArtifact/hw01-maven/hw01-maven.iml" filepath="$PROJECT_DIR$/anotherArtifact/hw01-maven/hw01-maven.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/otus_java.iml" filepath="$PROJECT_DIR$/.idea/otus_java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/anotherArtifact/second-module/second-module.iml" filepath="$PROJECT_DIR$/anotherArtifact/second-module/second-module.iml" />
     </modules>
   </component>
 </project>

@@ -7,11 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="hw01-maven" />
+        <module name="second-module" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="anotherArtifact" target="1.5" />
+      <module name="anotherArtifact" target="1.6" />
       <module name="hw01-maven" target="1.6" />
+      <module name="second-module" target="1.6" />
     </bytecodeTargetLevel>
   </component>
 </project>
