@@ -12,9 +12,9 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="anotherArtifact" target="1.6" />
-      <module name="DIY_List" target="1.6" />
+      <module name="DIY_List" target="8" />
       <module name="hw01-maven" target="1.6" />
-      <module name="otus_java" target="1.6" />
+      <module name="otus_java" target="8" />
       <module name="second-module" target="1.6" />
     </bytecodeTargetLevel>
   </component>
