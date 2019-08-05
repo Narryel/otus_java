@@ -10,7 +10,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>second-module</artifactId>
+    <artifactId>DIY_List</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     

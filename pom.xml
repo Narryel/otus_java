@@ -20,7 +20,7 @@
 
   <modules>
     <module>hw01-maven</module>
-    <module>second-module</module>
+    <module>DIY_List</module>
   </modules>
 
   <dependencies>

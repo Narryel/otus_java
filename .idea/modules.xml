@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/anotherArtifact/anotherArtifact.iml" filepath="$PROJECT_DIR$/anotherArtifact/anotherArtifact.iml" />
-      <module fileurl="file://$PROJECT_DIR$/anotherArtifact/hw01-maven/hw01-maven.iml" filepath="$PROJECT_DIR$/anotherArtifact/hw01-maven/hw01-maven.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DIY_List/DIY_List.iml" filepath="$PROJECT_DIR$/DIY_List/DIY_List.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hw01-maven/hw01-maven.iml" filepath="$PROJECT_DIR$/hw01-maven/hw01-maven.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/otus_java.iml" filepath="$PROJECT_DIR$/.idea/otus_java.iml" />
-      <module fileurl="file://$PROJECT_DIR$/anotherArtifact/second-module/second-module.iml" filepath="$PROJECT_DIR$/anotherArtifact/second-module/second-module.iml" />
     </modules>
   </component>
 </project>
