@@ -2,18 +2,17 @@ package ru.otus.homework2;
 
 import java.util.*;
 
-public class DiyLIST<E> implements List<E> {
+public class DiyList<E> implements List<E> {
 
-    private List list = new ArrayList();
     private int INITIAL_SIZE = 15;
     private Object[] elements;
     private int size;
 
-    public DiyLIST(int startSize) {
+    public DiyList(int startSize) {
         elements = new Object[size];
     }
 
-    public DiyLIST() {
+    public DiyList() {
         elements = new Object[INITIAL_SIZE];
     }
 
@@ -44,7 +43,7 @@ public class DiyLIST<E> implements List<E> {
 
     @Override
     public Object[] toArray() {
-        return elements;
+        return Arrays.copyOf(elements, size);
     }
 
     public int getLength() {
@@ -62,7 +61,7 @@ public class DiyLIST<E> implements List<E> {
     }
 
     private Object[] grow() {
-        return elements = Arrays.copyOf(elements, size < INITIAL_SIZE ? INITIAL_SIZE : size * 2);
+        return Arrays.copyOf(elements, size < INITIAL_SIZE ? INITIAL_SIZE : size * 2);
     }
 
     @Override
@@ -185,7 +184,7 @@ public class DiyLIST<E> implements List<E> {
         @Override
         public E next() {
             if (nextElementIndex > size) throw new ArrayIndexOutOfBoundsException();
-            Object[] objects = DiyLIST.this.elements;
+            Object[] objects = DiyList.this.elements;
             lastReturnedIndex = nextElementIndex;
             nextElementIndex++;
             return (E) objects[lastReturnedIndex];
@@ -194,14 +193,7 @@ public class DiyLIST<E> implements List<E> {
         @Override
         public void remove() {
             throw new UnsupportedOperationException();
-//            if (lastReturnedIndex<0) throw new IllegalStateException();
-
         }
-
-//        @Override
-//        public void forEachRemaining(Consumer<? super E> action) {
-//            throw new UnsupportedOperationException();
-//        }
     }
 
     private class MyListItr extends MyIterator implements ListIterator<E> {
@@ -229,20 +221,20 @@ public class DiyLIST<E> implements List<E> {
         public E previous() {
             int index = nextElementIndex - 1;
             if (index < 0) throw new NoSuchElementException();
-            Object[] elementData = DiyLIST.this.elements;
+            Object[] elementData = DiyList.this.elements;
             nextElementIndex = index;
             return (E) elements[lastReturnedIndex = index];
         }
 
         @Override
         public void set(E o) {
-            DiyLIST.this.set(lastReturnedIndex, o);
+            DiyList.this.set(lastReturnedIndex, o);
 
         }
 
         @Override
         public void add(Object o) {
-
+            throw new UnsupportedOperationException();
         }
     }
 }

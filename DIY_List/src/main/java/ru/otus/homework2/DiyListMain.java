@@ -6,9 +6,9 @@ import java.util.List;
 
 public class DiyListMain {
     public static void main(String[] args) {
-        DiyLIST list = new DiyLIST();
-        DiyLIST list2 = new DiyLIST();
-        DiyLIST<BasicDto> list3 = new DiyLIST<BasicDto>();
+        DiyList list = new DiyList();
+        DiyList list2 = new DiyList();
+        DiyList<BasicDto> list3 = new DiyList<BasicDto>();
 
         System.out.println("list = " + list);
         System.out.println("list.size() = " + list.size());
