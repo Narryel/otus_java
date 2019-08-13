@@ -13,14 +13,15 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-      <maven.compiler.source>8</maven.compiler.source>
-      <maven.compiler.target>8</maven.compiler.target>
+      <maven.compiler.source>10</maven.compiler.source>
+      <maven.compiler.target>10</maven.compiler.target>
     <guava.version>28.0-jre</guava.version>
   </properties>
 
   <modules>
     <module>hw01-maven</module>
     <module>DIY_List</module>
+    <module>ATM</module>
   </modules>
 
   <dependencies>
