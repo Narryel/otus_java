@@ -9,5 +9,5 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 @Target(ElementType.METHOD)
 @Retention(RUNTIME)
 public @interface Test {
-	Class expectedException() default ExceptionInInitializerError.class;
+	Class expectedException() default Exception.class;
 }
