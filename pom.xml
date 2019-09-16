@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.narryel</groupId>
-  <artifactId>anotherArtifact</artifactId>
+  <artifactId>otusHomeworks</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
@@ -21,6 +21,7 @@
   <modules>
     <module>hw01-maven</module>
     <module>DIY_List</module>
+    <module>testFramework</module>
   </modules>
 
   <dependencies>

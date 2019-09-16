@@ -6,7 +6,7 @@
 
     <parent>
         <groupId>com.narryel</groupId>
-        <artifactId>anotherArtifact</artifactId>
+        <artifactId>otusHomeworks</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     
