@@ -1,9 +1,12 @@
 package ru.otus.ATM;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.TreeMap;
 
+@Slf4j
 public class App {
     public static void main(String[] args) {
 

@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CashCassete implements Comparable<CashCassete>{
-    private Nominal nominal;
+    private final Nominal nominal;
     private int banknotesCount;
 
 
