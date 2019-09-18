@@ -40,7 +40,8 @@ public class LogAspect {
             } else {
                 for (Method method : className.getMethods()) {
                     if (method.getAnnotation(Log.class) != null) {
-                        annotatedMethods.add(getMethodSignatureCode(method));
+                        String signatureCode = getMethodSignatureCode(method);
+                        annotatedMethods.add(signatureCode);
                     }
                 }
             }
@@ -66,7 +67,7 @@ public class LogAspect {
         private static String getMethodSignatureCode(Method method) {
             StringBuilder sb = new StringBuilder(method.getName()).append('@');
             for (Parameter parameter : method.getParameters()) {
-                sb.append(parameter.getClass().getName())
+                sb.append(parameter.getType().getName())
                         .append('+');
             }
             return sb.toString();
