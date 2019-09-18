@@ -1,5 +1,7 @@
-package ru.otus.homework;
+package ru.otus.homework.loggable;
 
+
+import ru.otus.homework.aop.Log;
 
 @Log
 public class LoggableFullImpl implements Loggable {

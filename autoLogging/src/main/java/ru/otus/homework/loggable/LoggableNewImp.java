@@ -1,4 +1,6 @@
-package ru.otus.homework;
+package ru.otus.homework.loggable;
+
+import ru.otus.homework.aop.Log;
 
 public class LoggableNewImp implements Loggable {
     @Override
