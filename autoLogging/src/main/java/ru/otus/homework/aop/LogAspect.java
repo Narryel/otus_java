@@ -34,7 +34,7 @@ public class LogAspect {
 
         private void checkForAnnotation(Class<?> className) {
             if (className.getAnnotation(Log.class) != null) {
-                annotatedMethods.addAll(Arrays.stream(className.getMethods())
+                annotatedMethods.addAll(Arrays.stream(className.getDeclaredMethods())
                         .map(LoggerHandler::getMethodSignatureCode)
                         .collect(Collectors.toSet()));
             } else {
