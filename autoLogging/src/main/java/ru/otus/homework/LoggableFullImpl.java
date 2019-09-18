@@ -1,9 +1,10 @@
 package ru.otus.homework;
 
-public class LoggableImpl implements Loggable {
-    @Log
+
+@Log
+public class LoggableFullImpl implements Loggable {
     @Override
-    public void doSomeLogic(int b1, int i, int a) {
+    public void doSomeLogic(int b1, int i, int b) {
 
     }
 
@@ -16,7 +17,4 @@ public class LoggableImpl implements Loggable {
     public void doAnotherLogic(Object a, Object b) {
 
     }
-
 }
-
-
