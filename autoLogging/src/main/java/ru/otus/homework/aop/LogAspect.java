@@ -38,7 +38,7 @@ public class LogAspect {
                         .map(LoggerHandler::getMethodSignatureCode)
                         .collect(Collectors.toSet()));
             } else {
-                for (Method method : className.getMethods()) {
+                for (Method method : className.getDeclaredMethods()) {
                     if (method.getAnnotation(Log.class) != null) {
                         String signatureCode = getMethodSignatureCode(method);
                         annotatedMethods.add(signatureCode);
